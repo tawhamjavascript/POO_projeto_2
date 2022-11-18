@@ -6,4 +6,7 @@ public abstract class Ingresso {
 
     }
     public abstract double calcularValor();
+    public int getCodigo () {
+        return codigo;
+    }
 }

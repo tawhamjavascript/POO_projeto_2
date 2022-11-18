@@ -7,6 +7,6 @@ public class IngressoIndividual extends Ingresso {
 
     @Override
     public double calcularValor() {
-        return 1.2 * jogo.preco;
+        return 1.2 * jogo.getPreco();
     }
 }
