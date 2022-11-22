@@ -3,14 +3,13 @@ import java.util.ArrayList;
 public class Time {
     private String nome;
     private String origem;
-    public ArrayList<Jogo> jogos;
+    public ArrayList<Jogo> jogos = new ArrayList<Jogo>();
     public Time (String nome, String origem) {
         this.nome = nome;
         this.origem = origem;
     }
     public void adicionar (Jogo jogo) {
         jogos.add(jogo);
-        jogo.setEstoque(1);
     }
     public String getNome () {
         return this.nome;
@@ -26,5 +25,12 @@ public class Time {
         }
         return soma;
     }
+    public String toString() {
+        String result = "nome: " + this.nome + " origem:" + this.origem + " \n jogos: ";
+        for (Jogo jogo: jogos) {
+            result += jogo.getId() + " " + jogo.getData() + " " + jogo.getLocal() + " ";
+        }
+        return result;
 
+    }
 }

@@ -1,5 +1,5 @@
 public class IngressoIndividual extends Ingresso {
-    public Jogo jogo;
+    private Jogo jogo;
 
     public IngressoIndividual (int codigo) {
         super(codigo);
@@ -9,4 +9,12 @@ public class IngressoIndividual extends Ingresso {
     public double calcularValor() {
         return 1.2 * jogo.getPreco();
     }
+    public void setJogo(Jogo jogo) {
+        this.jogo = jogo;
+    }
+
+    public String toString() {
+        return "ingresso: " + super.getCodigo() + ", jogo: " + jogo.getId();
+    }
+
 }

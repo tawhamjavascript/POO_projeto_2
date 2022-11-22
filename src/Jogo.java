@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
 public class Jogo {
-    public int id;
+    private int id;
     private String data;
     private String local;
     private int estoque;
     private double preco;
     private Time time1;
     private Time time2;
-    private ArrayList<Ingresso> ingressos;
+    private ArrayList<Ingresso> ingressos = new ArrayList<Ingresso>();
     public Jogo (int id, String data, String local, int estoque, double preco, Time time1, Time time2) {
         this.id = id;
         this.data = data;
@@ -20,6 +20,9 @@ public class Jogo {
     }
     public String getData () {
         return data;
+    }
+    public int getId () {
+        return id;
     }
     public String getLocal () {
         return local;
@@ -59,5 +62,15 @@ public class Jogo {
 
         }
         return soma;
+    }
+    public String toString() {
+        String resultado =  "id: " + getId() + ", data: " + getData() + " ,local: " + getLocal() + ", estoque: " + getEstoque() +
+                ", preço: " + getPreco() + ", time1: " + time1.getNome() + ", time2: " + time2.getNome();
+
+        resultado += ", ingressos: ";
+        for (Ingresso ingresso: ingressos) {
+            resultado += "" + ingresso.getCodigo() + ", ";
+        }
+        return resultado;
     }
 }

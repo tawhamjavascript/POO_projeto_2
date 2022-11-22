@@ -9,4 +9,5 @@ public abstract class Ingresso {
     public int getCodigo () {
         return codigo;
     }
+    public abstract String toString();
 }
