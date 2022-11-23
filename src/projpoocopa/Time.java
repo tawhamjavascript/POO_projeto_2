@@ -1,3 +1,5 @@
+package projpoocopa;
+
 import java.util.ArrayList;
 
 public class Time {
@@ -26,11 +28,12 @@ public class Time {
         return soma;
     }
     public String toString() {
-        String result = "nome: " + this.nome + " origem:" + this.origem + " \n jogos: ";
+        String result = "\nnome=" + this.nome + " origem=" + this.origem + " \njogos: ";
         for (Jogo jogo: jogos) {
-            result += jogo.getId() + " " + jogo.getData() + " " + jogo.getLocal() + " ";
+            result += jogo.getId() + "=" + jogo.getData() + "," + jogo.getLocal() + " ";
         }
         return result;
 
     }
+    
 }

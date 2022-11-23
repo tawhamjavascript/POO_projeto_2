@@ -1,3 +1,5 @@
+package projpoocopa;
+
 public abstract class Ingresso {
     private int codigo;
 

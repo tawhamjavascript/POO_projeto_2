@@ -1,3 +1,5 @@
+package projpoocopa;
+
 import java.util.Random;
 
 

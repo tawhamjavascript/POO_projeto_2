@@ -1,3 +1,5 @@
+package projpoocopa;
+
 public class IngressoIndividual extends Ingresso {
     private Jogo jogo;
 
@@ -14,7 +16,7 @@ public class IngressoIndividual extends Ingresso {
     }
 
     public String toString() {
-        return "ingresso: " + super.getCodigo() + ", jogo: " + jogo.getId();
+        return "codigo=" + super.getCodigo() + ", jogo=" + jogo.getId();
     }
 
 }

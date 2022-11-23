@@ -1,3 +1,5 @@
+package projpoocopa;
+
 import java.util.ArrayList;
 
 public class IngressoGrupo extends Ingresso{
@@ -19,7 +21,7 @@ public class IngressoGrupo extends Ingresso{
 
     @Override
     public String toString() {
-        String result = "codigo: " + super.getCodigo() + ", jogos: ";
+        String result = "codigo=" + super.getCodigo() + ", jogos: ";
         for (Jogo jogo: jogos) {
             result += jogo.getId() + ", ";
 

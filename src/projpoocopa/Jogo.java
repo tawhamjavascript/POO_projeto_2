@@ -1,3 +1,5 @@
+package projpoocopa;
+
 import java.util.ArrayList;
 
 public class Jogo {
@@ -64,10 +66,10 @@ public class Jogo {
         return soma;
     }
     public String toString() {
-        String resultado =  "id: " + getId() + ", data: " + getData() + " ,local: " + getLocal() + ", estoque: " + getEstoque() +
-                ", preço: " + getPreco() + ", time1: " + time1.getNome() + ", time2: " + time2.getNome();
+        String resultado =  "\nid=" + getId() + ", data=" + getData() + " , local=" + getLocal() + ", estoque=" + getEstoque() +
+                ", preço=" + getPreco() + ", time1=" + time1.getNome() + " x time2=" + time2.getNome();
 
-        resultado += ", ingressos: ";
+        resultado += "\n ingressos: ";
         for (Ingresso ingresso: ingressos) {
             resultado += "" + ingresso.getCodigo() + ", ";
         }
